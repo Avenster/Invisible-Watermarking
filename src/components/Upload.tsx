@@ -13,7 +13,7 @@ export default function Upload() {
 
   const templates = [
     {
-      title: 'Next.js Commerce',
+      title: 'Image',
       description: 'An all-in-one starter kit for high-performance ecommerce sites.',
       image: "/images/imgs1.png"
     },
@@ -23,8 +23,8 @@ export default function Upload() {
       image: "/images/imgs2.jpg"
     },
     {
-      title: 'Next.js Boilerplate',
-      description: 'A Next.js app and a Serverless Function API.',
+      title: 'Boilerplate',
+      description: 'A app and a Serverless Function API.',
       image: "/images/imgs3.jpg"
     },
   ];
@@ -75,7 +75,7 @@ export default function Upload() {
             {/* Left side - Image */}
             <div className="w-2/3">
               <div className="rounded-lg overflow-hidden">
-                {/* <img src={processedImage} alt="Processed" className="w-full h-auto" /> */}
+                <img src={processedImage} alt="Processed" className="w-full h-auto" />
               </div>
             </div>
 
@@ -83,15 +83,15 @@ export default function Upload() {
             <div className="w-1/3 flex flex-col gap-4">
               <button 
                 onClick={handleDownload}
-                className="w-full flex items-center justify-center gap-2 bg-white text-black py-3 px-6 rounded-lg hover:bg-gray-200 transition-colors"
+                className="w-full flex items-center justify-center gap-2 bg-white text-black py-3 px-6 rounded-lg  hover:bg-gray-200 transition-colors"
               >
                 <Download className="w-5 h-5" />
                 Download Watermarked Image
               </button>
 
               <button 
-                className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
-              >
+    className="w-full flex items-center justify-center gap-2 bg-black-600 text-white py-3 px-6 rounded-lg border border-[#000] hover:bg-white hover:text-black transition-colors"
+>
                 <Key className="w-5 h-5" />
                 Extract Watermark
               </button>
@@ -103,12 +103,6 @@ export default function Upload() {
                 <ArrowLeft className="w-5 h-5" />
                 Back to Upload
               </button>
-
-              {/* Alpha value display */}
-              <div className="mt-2 p-4 bg-gray-900 rounded-lg">
-                <div className="text-sm text-gray-400 mb-1">Alpha Value</div>
-                <div className="text-xl font-medium">0.5</div>
-              </div>
             </div>
           </div>
         </div>
@@ -116,9 +110,9 @@ export default function Upload() {
     }
 
     return (
-      <div className="flex flex-col lg:flex-row h-[100%] gap-[4vw]">
-        <div className="flex flex-col justify-center items-start w-[50%] pt-2">  
-        <div className="mb-6">
+      <div className="flex flex-col justify-center lg:flex-row h-[100%] gap-[4vw]">
+        <div className="flex flex-col justify-center items-start w-[50%]">
+          <div className="mb-6">
             <h1 className="text-4xl font-bold mb-2">
               Get started in seconds
             </h1>
