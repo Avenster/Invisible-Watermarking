@@ -1,0 +1,112 @@
+<svg width="1206" height="832" viewBox="0 0 1206 832" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions for trails -->
+    <linearGradient id="blueTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D3FF" stop-opacity="0.8">
+        <animate attributeName="stop-opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#00D3FF" stop-opacity="0"/>
+    </linearGradient>
+    
+    <linearGradient id="purpleTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D800FF" stop-opacity="0.8">
+        <animate attributeName="stop-opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#D800FF" stop-opacity="0"/>
+    </linearGradient>
+    
+    <linearGradient id="redTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0400" stop-opacity="0.8">
+        <animate attributeName="stop-opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FF0400" stop-opacity="0"/>
+    </linearGradient>
+    
+    <linearGradient id="greenTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF8C" stop-opacity="0.8">
+        <animate attributeName="stop-opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#00FF8C" stop-opacity="0"/>
+    </linearGradient>
+    
+    <linearGradient id="yellowTrail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FAFF00" stop-opacity="0.8">
+        <animate attributeName="stop-opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FAFF00" stop-opacity="0"/>
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base paths -->
+  <path d="M124.289 194.5L124.289 371.592C124.289 377.115 128.766 381.592 134.289 381.592L388.5 381.592L797 381.592C802.523 381.592 807 386.069 807 391.592L807 705.5" stroke="#1F1F1F" stroke-width="0.5" fill="transparent"/>
+  <path d="M124.289 499.5L124.289 704.5C124.289 710.023 128.766 714.5 134.289 714.5L378.5 714.5C384.023 714.5 388.5 710.023 388.5 704.5L388.5 509.5C388.5 503.977 392.977 499.5 398.5 499.5L1205.5 499.5" stroke="#1F1F1F" stroke-width="0.5" fill="transparent"/>
+  <path d="M1134 196L1134 724L910 724L910 196" stroke="#1F1F1F" stroke-width="0.5" fill="transparent"/>
+  <path d="M461 194L461 710" stroke="#1F1F1F" stroke-width="0.5" fill="transparent"/>
+  <path d="M669.25 193.999L671.25 711" stroke="#1F1F1F" stroke-width="0.5" fill="transparent"/>
+
+  <!-- Animated dots with trails -->
+  <!-- Blue dot -->
+  <circle r="8" fill="url(#blueTrail)">
+    <animateMotion 
+      path="M124.289 194.5L124.289 371.592C124.289 377.115 128.766 381.592 134.289 381.592L388.5 381.592L797 381.592C802.523 381.592 807 386.069 807 391.592L807 705.5"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+    <animate attributeName="fill" values="#00D3FF;#00D3FF;#00D3FF" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Purple dot -->
+  <circle r="8" fill="url(#purpleTrail)">
+    <animateMotion 
+      path="M124.289 499.5L124.289 704.5C124.289 710.023 128.766 714.5 134.289 714.5L378.5 714.5C384.023 714.5 388.5 710.023 388.5 704.5L388.5 509.5C388.5 503.977 392.977 499.5 398.5 499.5L1205.5 499.5"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+    <animate attributeName="fill" values="#D800FF;#D800FF;#D800FF" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Red dot -->
+  <circle r="8" fill="url(#redTrail)">
+    <animateMotion 
+      path="M461 194L461 710"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+    <animate attributeName="fill" values="#FF0400;#FF0400;#FF0400" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Green dot -->
+  <circle r="8" fill="url(#greenTrail)">
+    <animateMotion 
+      path="M669.25 193.999L671.25 711"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+    <animate attributeName="fill" values="#00FF8C;#00FF8C;#00FF8C" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Yellow dot -->
+  <circle r="8" fill="url(#yellowTrail)">
+    <animateMotion 
+      path="M910 196L910 724"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+    <animate attributeName="fill" values="#FAFF00;#FAFF00;#FAFF00" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Static circles -->
+  <circle cx="461" cy="704" r="7" fill="#272727" stroke="#464646"/>
+  <circle cx="671" cy="704" r="7" fill="#272727" stroke="#464646"/>
+  <circle cx="807" cy="704" r="7" fill="#272727" stroke="#464646"/>
+  <circle cx="1134" cy="194" r="7" fill="#272727" stroke="#464646"/>
+  <circle cx="1199" cy="499" r="7" fill="#272727" stroke="#464646"/>
+</svg>

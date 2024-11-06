@@ -1,0 +1,14 @@
+.foot{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    color: rgba(255, 255, 255, 0.42);
+}
+.foot>p{
+    font-size: 1.5vmin;
+    
+}

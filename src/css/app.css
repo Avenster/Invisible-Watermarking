@@ -1,0 +1,58 @@
+.App {
+    /* background-color:rgb(31, 31, 31) ; */
+    /* height: 100vh; */
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    position: relative;
+}
+
+.middle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background-image: url('./bg2.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('./bg2.svg'); */
+}
+.n1{
+    right: 0;
+    top:100;
+    z-index:10;
+    transform: rotate(0);
+}
+.n2{
+    right: 150;
+    top: 70;
+    z-index:9;
+    transform: rotate(-4deg);
+}
+.n3{
+    right: 300;
+    top: 70;
+    z-index:8;
+    transform: rotate(-5deg);
+
+}
+.brx{
+    border: 1px solid rgba(255, 255, 255, 0.211);
+    overflow: hidden;
+    border-radius: 0.8rem;
+    height: 45vh;
+    cursor: pointer;
+}

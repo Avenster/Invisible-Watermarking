@@ -1,0 +1,25 @@
+.feature{
+    height: 60vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+    /* position: relative; */
+}
+h1{
+    background-image: linear-gradient(to bottom, white, rgb(255, 243, 221));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.feet{
+    display: flex;
+    width: 90%;
+    gap: 1.24vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 100%; */
+}

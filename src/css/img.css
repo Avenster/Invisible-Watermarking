@@ -1,0 +1,13 @@
+.br{
+    border: 1px solid rgba(255, 255, 255, 0.206);
+}
+.br0{
+    border: 1px solid rgba(255, 255, 255, 0.206);
+    border-style: dashed;
+    transition: border 0.4s linear;
+    /* border-spacing: 1vh; */
+}
+.bgblack{
+    background-color: rgba(0, 0, 0, 0.719);
+    backdrop-filter: blur(4px);
+}
