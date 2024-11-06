@@ -19,7 +19,7 @@ export default function navbar() {
         <div className="nav-right">
             <a href="*">Home</a>
             <a href="*">Get Started</a>
-            <Button variant="outline" className="px-10 py-2">Login</Button>
+            <button>Login</button>
         </div>
         
     </div>
