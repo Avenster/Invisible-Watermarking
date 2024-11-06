@@ -18,7 +18,7 @@ export default function navbar() {
         <div className="nav-right">
             <a href="*">Home</a>
             <a href="*">Get Started</a>
-            <button>Login</button>
+            <button className='login'> Login</button>
         </div>
         
     </div>

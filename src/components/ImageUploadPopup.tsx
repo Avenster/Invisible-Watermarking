@@ -68,8 +68,8 @@ export default function ImageUploadPopup({ isOpen, onClose, onImageProcessed, on
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div className="bgblack br text-white p-8 rounded-lg w-[80%] max-w-2xl">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[1001]">
+            <div className="bgblack br text-white p-8 rounded-lg w-[80%] max-w-2xl relative">
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-2xl font-bold">Upload Images</h2>
                     <button
@@ -140,4 +140,4 @@ export default function ImageUploadPopup({ isOpen, onClose, onImageProcessed, on
             </div>
         </div>
     );
-}
+};
