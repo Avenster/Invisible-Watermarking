@@ -44,7 +44,7 @@ export default function ImageUploadPopup({ isOpen, onClose, onImageProcessed, on
                 formData.append('watermark_image', watermarkImage);
                 formData.append('alpha', alpha.toString());
 
-                const response = await fetch('http://127.0.0.1:5000/embed_watermark', {
+                const response = await fetch('https://invisible-watermarking-1.onrender.com/embed_watermark', {
                     method: 'POST',
                     body: formData,
                 });
