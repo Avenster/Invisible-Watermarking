@@ -75,7 +75,7 @@ export default function Upload() {
             {/* Left side - Image */}
             <div className="w-2/3">
               <div className="rounded-lg overflow-hidden">
-                <img src={processedImage} alt="Processed" className="w-full h-auto" />
+                {/* <img src={processedImage} alt="Processed" className="w-full h-auto" /> */}
               </div>
             </div>
 

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { Download } from 'lucide-react';
+// import { Download } from 'lucide-react';
 import '../css/img.css'
 
 export default function ImageUploadPopup({ isOpen, onClose, onImageProcessed, onProcessingStart }) {

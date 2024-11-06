@@ -1,33 +1,28 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+'use client';
+
+import React, { useState } from 'react';
 import axios from 'axios';
 
-export default function Register() {
-  const router = useRouter();
+const RegisterPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('/api/register', {
-        name,
-        email,
-        password,
-      });
-
-      // Handle successful registration
-      console.log(response.data);
-      router.push('/'); // Redirect to the home page (page.tsx)
-    } catch (error) {
-      // Handle registration error
-      console.error(error);
+      const response = await axios.post('/api/register', { name, email, password });
+      localStorage.setItem('token', response.data.token);
+      // Redirect or update UI after successful registration
+    } catch (err) {
+      setError(err.response.data.message);
     }
   };
 
   return (
     <div>
       <h1>Register</h1>
+      {error && <p>{error}</p>}
       <input
         type="text"
         placeholder="Name"
@@ -49,4 +44,6 @@ export default function Register() {
       <button onClick={handleRegister}>Register</button>
     </div>
   );
-}
+};
+
+export default RegisterPage;
